@@ -26,12 +26,12 @@ export default async function handler(req, res) {
         Authorization: `Bearer ${OPENAI_API_KEY}`,
       },
       body: JSON.stringify({
-        // ← Aquí cambiamos a gpt-3.5-turbo en lugar de gpt-4
+        // ← IMPORTANTE: aquí el único modelo válido es "gpt-3.5-turbo"
         model: "gpt-3.5-turbo",
         messages: [
           { role: "system", content: "Eres un asistente muy útil." },
           { role: "user", content: mensaje }
-        ],
+        ]
       }),
     });
 
