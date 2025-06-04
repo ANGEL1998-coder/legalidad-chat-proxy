@@ -1,9 +1,7 @@
 // api/chat-gpt.js
 
-import fetch from "node-fetch";
-
 export default async function handler(req, res) {
-  // Solo aceptar POST
+  // Solo aceptar peticiones POST
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Método no permitido" });
   }
@@ -19,6 +17,7 @@ export default async function handler(req, res) {
   }
 
   try {
+    // Usamos fetch nativo de Node 18+ (no es necesario importar node-fetch)
     const openaiResponse = await fetch(
       "https://api.openai.com/v1/chat/completions",
       {
