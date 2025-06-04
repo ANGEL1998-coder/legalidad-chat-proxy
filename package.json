@@ -1,0 +1,15 @@
+{
+  "name": "legalidad-chat-proxy",
+  "version": "1.0.0",
+  "description": "Proxy para reenviar consultas de Legalidad.pe a la API de OpenAI",
+  "main": "index.js",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "node-fetch": "^3.4.0"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
