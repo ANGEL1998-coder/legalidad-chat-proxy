@@ -6,7 +6,7 @@
   "scripts": {
     "start": "vercel dev"
   },
-  "dependencies": { },
+  "dependencies": {},
   "engines": {
     "node": "18.x"
   }
